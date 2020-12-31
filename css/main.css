@@ -1,0 +1,144 @@
+:root {
+    --netflix: #E50914;
+    --preta: #141414;
+    --amazon: #0f171e;
+    --prime: #1399de;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: var(--amazon);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+
+/* MENU */
+
+/*header .container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    height: 70px;
+}*/
+
+header .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes piscar {
+    from {
+        color: var(--netflix);
+    }
+    to {
+        color: var(--prime);
+    }
+}
+
+header .container .logo {
+    margin-left: 15px;
+    font-family: 'Arial Black', Times;
+    font-size: 35px;
+    animation: piscar 3s alternate ease-in-out infinite;
+}
+
+header .container nav {
+    margin: auto;
+}
+
+header .container nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header .container nav a:hover {
+    color: #fff;
+}
+
+/* DESTAQUE */
+
+main .destaque {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('../img/capa_the-mandalorian.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+main .destaque .container {
+    width: 70%;
+}
+
+main .destaque .titulo-destaque {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .destaque .descricao-detalhe {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+main .destaque .botoes .botao {
+    background: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+main .destaque .botoes .botao:hover {
+    background: white;
+    color:  black;
+}
+
+main .destaque .botoes .botao i {
+    margin-right: 8px;
+}
+
+/* SECTIONS */
+
+section h2 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.item {
+    transition: 0.1s;
+}
+
+.item:hover {
+    border: 5px solid rgb(132, 0, 255);
+}
+
+.card-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}

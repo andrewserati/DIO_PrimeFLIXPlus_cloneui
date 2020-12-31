@@ -1,0 +1,28 @@
+@media screen and (max-width:700px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .botao {
+        margin-top: 5px;
+    }
+}
+
+/* DESCRIÇÃO DO DESTAQUE */
+@media (min-width:1000px){
+    main .destaque .descricao-detalhe {
+        width: 75%;
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    main .destaque .descricao-detalhe {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    main .destaque .descricao-detalhe {
+        width: 100%;
+    }
+}
